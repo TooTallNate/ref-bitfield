@@ -1,0 +1,14 @@
+{ "name": "ref-bitfield",
+  "description": "",
+  "keywords": [ "bitfield", "ref" ],
+  "version": "0.0.0",
+  "author": "",
+  "repository": { },
+  "main": "./lib/bitfield.js",
+  "scripts": {},
+  "dependencies": {
+     "debug": "*",
+     "ref": "0"
+  },
+  "devDependencies": {}
+}
