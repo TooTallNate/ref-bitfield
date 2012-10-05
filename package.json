@@ -5,10 +5,14 @@
   "author": "",
   "repository": { },
   "main": "./lib/bitfield.js",
-  "scripts": {},
-  "dependencies": {
-     "debug": "*",
-     "ref": "0"
+  "scripts": {
+    "test": "mocha -gc --reporter spec"
   },
-  "devDependencies": {}
+  "dependencies": {
+    "debug": "*",
+    "ref": "0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
 }

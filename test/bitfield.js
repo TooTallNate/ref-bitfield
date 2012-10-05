@@ -1,6 +1,6 @@
 var assert = require('assert')
   , ref = require('ref')
-  , BitfieldType = require('../')
+  , Bitfield = require('../')
 
 
 
@@ -16,7 +16,7 @@ describe('Bitfield', function () {
   afterEach(gc)
 
   it('should be a function', function () {
-    assert.equal('function', typeof BitfieldType)
+    assert.equal('function', typeof Bitfield)
   })
 
   describe('fields', function () {
