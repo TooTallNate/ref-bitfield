@@ -2,6 +2,15 @@ var assert = require('assert')
   , ref = require('ref')
   , BitfieldType = require('../')
 
+
+
+function toObject(bitfield){
+  var out = {}
+  for (var k in bitfield.constructor.fields)
+    out[k] = bitfield[k]
+  return out
+}
+
 describe('Bitfield', function () {
 
   afterEach(gc)
@@ -11,16 +20,15 @@ describe('Bitfield', function () {
   })
 
   describe('fields', function () {
-    var Fields = BitfieldType({
-      ''     : 0,
-      'a'    : 1,
-      'b'    : 2,
-      'a+b'  : 3,
-      'c'    : 4,
-      'a+c'  : 5,
-      'b+c'  : 6,
-      'a+b+c': 7
-    });
+    var Fields = Bitfield({
+      ___: 0,
+      $__: 1,
+      _$_: 2,
+      __$: 4,
+      $_$: 5,
+      _$$: 6,
+      $$$: 7
+    })
   })
 
   describe('.ref()', function () {
