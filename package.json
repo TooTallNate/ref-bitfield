@@ -6,13 +6,14 @@
   "repository": { },
   "main": "./lib/bitfield.js",
   "scripts": {
-    "test": "mocha -gc --reporter spec"
+    "test": "node-gyp rebuild --directory test && mocha -gc --reporter spec"
   },
   "dependencies": {
     "debug": "*",
     "ref": "0"
   },
   "devDependencies": {
+    "bindings": "*",
     "mocha": "*"
   }
 }
